@@ -5,6 +5,7 @@
 #include <string>
 #include <sstream>
 #include <iomanip>
+#include <cstdlib> // for atof
 #include <limits>
 #include <cmath>
 
@@ -16,24 +17,15 @@ class ScalarConverter
 		int _int;
 		float _float;
 		double _double;
-		bool _isChar;
-		bool _isInt;
-		bool _isFloat;
-		bool _isDouble;
-		bool _isImpossible;
-		bool _isNan;
-		bool _isInf;
-		bool _isMinusInf;
-		bool _isPlusInf;
 	public:
-		ScalarConverter();
-		ScalarConverter(std::string input);
-		ScalarConverter(ScalarConverter const &copy);
-		ScalarConverter& operator=(ScalarConverter const &other);
+		// ScalarConverter();
+		// ScalarConverter(std::string input);
+		// ScalarConverter(ScalarConverter const &copy);
+		// ScalarConverter& operator=(ScalarConverter const &other);
 
-		static void	convert();
+		static void	convert(std::string loco);
 
-		~ScalarConverter();
+		// ~ScalarConverter();
 };
 
 #endif
