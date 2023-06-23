@@ -18,14 +18,13 @@ class ScalarConverter
 		float _float;
 		double _double;
 	public:
-		// ScalarConverter();
-		// ScalarConverter(std::string input);
-		// ScalarConverter(ScalarConverter const &copy);
-		// ScalarConverter& operator=(ScalarConverter const &other);
+		ScalarConverter();
+		ScalarConverter(ScalarConverter const &copy);
+		ScalarConverter& operator=(ScalarConverter const &other);
 
 		static void	convert(std::string loco);
 
-		// ~ScalarConverter();
+		~ScalarConverter();
 };
 
 #endif
