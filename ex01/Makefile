@@ -2,13 +2,13 @@ CC = c++ -Wall -Wextra -Werror -std=c++98
 CFILES = main.cpp Serializer.cpp
 MAIN = data
 
-all: $(MAIN)
+all: $(NAME)
 
-$(MAIN):
-	$(CC) -g $(CFILES) Serializer.hpp Data.hpp -o $(MAIN)
+$(NAME):
+	$(CC) -g $(CFILES) Serializer.hpp Data.hpp -o $(NAME)
 
 clean:
-	rm $(MAIN)
+	rm $(NAME)
 
 fclean: clean
 

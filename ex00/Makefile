@@ -1,14 +1,14 @@
 CC = c++ -Wall -Wextra -Werror -std=c++98
 CFILES = main.cpp ScalarConverter.cpp
-MAIN = converter
+NAME = converter
 
-all: $(MAIN)
+all: $(NAME)
 
-$(MAIN):
-	$(CC) -g $(CFILES) ScalarConverter.hpp -o $(MAIN)
+$(NAME):
+	$(CC) -g $(CFILES) ScalarConverter.hpp -o $(NAME)
 
 clean:
-	rm $(MAIN)
+	rm $(NAME)
 
 fclean: clean
 

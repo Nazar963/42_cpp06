@@ -8,6 +8,7 @@
 #include <cstdlib> // for atof
 #include <limits>
 #include <cmath>
+#include <cfloat>
 
 class ScalarConverter
 {
@@ -17,6 +18,7 @@ class ScalarConverter
 		int _int;
 		float _float;
 		double _double;
+		long double tester;
 	public:
 		ScalarConverter();
 		ScalarConverter(ScalarConverter const &copy);

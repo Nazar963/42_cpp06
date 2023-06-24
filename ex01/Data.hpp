@@ -1,13 +1,9 @@
 #ifndef DATA_HPP
 #define DATA_HPP
 
-#include <iostream>
-#include <string>
-
-class Data
+struct	Data
 {
-	public:
-		std::string loco;
+	int	loco;
 };
 
 #endif

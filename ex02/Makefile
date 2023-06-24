@@ -1,14 +1,14 @@
 CC = c++ -Wall -Wextra -Werror -std=c++98
 CFILES = main.cpp Base.cpp
-MAIN = base
+NAME = base
 
-all: $(MAIN)
+all: $(NAME)
 
-$(MAIN):
-	$(CC) -g $(CFILES) Base.hpp -o $(MAIN)
+$(NAME):
+	$(CC) -g $(CFILES) Base.hpp -o $(NAME)
 
 clean:
-	rm $(MAIN)
+	rm $(NAME)
 
 fclean: clean
 
